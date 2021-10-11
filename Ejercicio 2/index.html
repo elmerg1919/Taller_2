@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/estilos.css">
+    <!--Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>DAW</title>
+</head>
+
+<body>
+    <h1>POLLO FELIZ</h1>
+    <img src="./img/polloF.png" alt="" id="logo">
+    <br>
+
+    <div class="contenedor_table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Combos</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="combos3">Súper Combo ---------- $7.25</label></td>
+                    <td><input id="combo3" type="radio" name="combos" value="7.25" ></td>
+                </tr>
+                <tr>
+                    <td><label for="combos2">Combo Personal ------- $5.25</label></td>
+                    <td><input id="combo2" type="radio" name="combos" value="5.25" ></td>
+                </tr>
+                <tr>
+                    <td><label for="combos1">Combo Infantil -------- $3.50</label></td>
+                    <td><input id="combo1" type="radio" name="combos" value="3.50" ></td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+
+   <div class="contenedor_table2">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th colspan="2">Producto</th>
+                    <th></th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td><input type="checkbox"  class="check" id="ensalada" value="1.50"></input></td>
+                    <td colspan="2">Ensalada</td>
+                    <td><img src="./img/ensalada.png" ></td>
+                    <td>$1.50</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check" id="papaFrita" value="1.25"></input></td>
+                    <td colspan="2">Papas Fritas</td>
+                    <td><img src="./img/papas.png" alt="Papas fritas"></td>
+                    <td>$1.25</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check" id="p_grande" value="1.75"></input></td>
+                    <td colspan="2">Pieza de pollo grande</td>
+                    <td><img src="./img/p_grande.png" alt="Pollo"></td>
+                    <td>$1.75</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check" id="p_mediano" value="1.50"></input></td>
+                    <td colspan="2">Pieza de pollo mediana</td>
+                    <td><img src="./img/p_mediano.png" alt="Pollo"></td>
+                    <td>$1.50</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check" id="p_pequeña" value="1.25"></input></td>
+                    <td colspan="2">Pieza de pollo pequeña</td>
+                    <td><img src="./img/p_pequeña.png" alt="Pollo"></td>
+                    <td>$1.25</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check" id="b_masgrande" value="1.50"></input></td>
+                    <td colspan="2">Bebida grande</td>
+                    <td><img src="./img/b_masgrande.jpg" alt="Bebida"></td>
+                    <td>$1.50</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check" id="b_grande" value="1.25"></input></td>
+                    <td colspan="2">Bebida mediana</td>
+                    <td><img src="./img/b_grande.jpg" alt="Bebida"></td>
+                    <td>$1.25</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check" id="b_pequeña" value="1.00"></input></td>
+                    <td colspan="2">Bebida pequeña</td>
+                    <td><img src="./img/b_pequeña.png" alt="Bebida"></td>
+                    <td>$1.00</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check" id="cafe" value="0.50"></input></td>
+                    <td colspan="2">Café</td>
+                    <td><img src="./img/cafe.png" alt="Café"></td>
+                    <td>$0.50</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check" id="postre" value="1.25"></input></td>
+                    <td colspan="2">Postre</td>
+                    <td><img src="./img/postre.png" alt="Postre"></td>
+                    <td>$1.25</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Gasto final</h2>
+        <h2 id="gastoFinal">0.00$</h2>
+        <button type="button" id="boton" class="btn btn-primary">Calcular</button>
+        <br><br>
+        
+        <h5>Deje un comentario</h5>
+        <div id="comen">
+            <textarea name="area" id="area" cols="40" rows="5" disabled="true"></textarea>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./JS/Funciones.js"></script>
+
+</body>
+</html>
